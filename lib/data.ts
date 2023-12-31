@@ -2,9 +2,12 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-import corpcommentImg from '@/public/corpcomment.png';
-import rmtdevImg from '@/public/rmtdev.png';
-import wordanalyticsImg from '@/public/wordanalytics.png';
+// import corpcommentImg from '@/public/corpcomment.png';
+// import rmtdevImg from '@/public/rmtdev.png';
+// import wordanalyticsImg from '@/public/wordanalytics.png';
+import coffehunter from '@/public/coffehunter.jpg';
+import smartbank from '@/public/smartbank.jpg';
+import teambuilder from '@/public/teambuilder.jpg';
 
 export const links = [
   {
@@ -62,21 +65,27 @@ export const projectsData = [
     description:
       'Aplicación web para ayudar en la organización de equipos de trabajo. La aplicación permite crear plantillas de personal y asignarlos a un equipo de trabajo. Asigna favoritos y elimina miembros del equipo.',
     tags: ['React'],
-    imageUrl: corpcommentImg,
+    imageUrl: teambuilder,
+    demoUrl: 'https://registro-personal-org.vercel.app/',
+    githubUrl: 'https://github.com/StefanoP21/registro-personal-org',
   },
   {
     title: 'Smart Bank',
     description:
       'Aplicación web para la gestión de finanzas personales. La aplicación simula un estado de cuenta bancario y cuenta con funcionalidades para ocultar y mostrar el saldo, así como cambiar el tema de la aplicación.',
     tags: ['React'],
-    imageUrl: rmtdevImg,
+    imageUrl: smartbank,
+    demoUrl: 'https://smart-bank-liard.vercel.app/',
+    githubUrl: 'https://github.com/StefanoP21/smart-bank',
   },
   {
     title: 'CoffeHunter',
     description:
       'Aplicación web para una marca de café peruana. La aplicación web cuenta con un catálogo de productos, una galería de fotos, un formulario de contacto y un CRUD para administrar los productos. ',
     tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'PHP', 'MySQL'],
-    imageUrl: wordanalyticsImg,
+    imageUrl: coffehunter,
+    demoUrl: 'https://stefanop21.github.io/coffehunter-responsive/',
+    githubUrl: 'https://github.com/StefanoP21/coffehunter-responsive',
   },
 ] as const;
 

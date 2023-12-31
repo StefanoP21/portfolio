@@ -49,8 +49,9 @@ export const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hola 👋, soy Stefano.</span> Soy un
-        <span className="font-bold"> desarrollador de software</span>{' '}
+        <span className="font-bold">Hola 👋,</span> soy{' '}
+        <span className="font-bold">Stefano.</span> Soy un{' '}
+        <span className="font-bold">desarrollador de software</span>{' '}
         especializado en el <span className="font-bold">front-end</span>. Me
         apasiona contruir{' '}
         <span className="italic">sitios & aplicaciones web</span>. Mi
@@ -80,21 +81,23 @@ export const Intro = () => {
           <PiDownloadBold className="text-[1.2rem] opacity-70 group-hover:translate-y-1 transition" />
         </a>
 
-        <a
-          href="https://www.linkedin.com/in/aldair-palomino/"
-          target="_blank"
-          className="bg-white p-4 text-[1.2rem] text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition border border-black/10"
-        >
-          <FaLinkedin />
-        </a>
+        <div className="flex gap-3">
+          <a
+            href="https://www.linkedin.com/in/aldair-palomino/"
+            target="_blank"
+            className="bg-white p-4 text-[1.2rem] text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition border border-black/10"
+          >
+            <FaLinkedin />
+          </a>
 
-        <a
-          href="https://github.com/StefanoP21"
-          target="_blank"
-          className="bg-white p-4 text-[1.2rem] text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition border border-black/10"
-        >
-          <FaGithub />
-        </a>
+          <a
+            href="https://github.com/StefanoP21"
+            target="_blank"
+            className="bg-white p-4 text-[1.2rem] text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition border border-black/10"
+          >
+            <FaGithub />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
