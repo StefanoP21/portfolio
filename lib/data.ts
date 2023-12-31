@@ -63,8 +63,8 @@ export const projectsData = [
   {
     title: 'Organizador de Equipos',
     description:
-      'Aplicación web para ayudar en la organización de equipos de trabajo. La aplicación permite crear plantillas de personal y asignarlos a un equipo de trabajo. Asigna favoritos y elimina miembros del equipo.',
-    tags: ['React'],
+      'Aplicación web para ayudar en la organización de equipos de trabajo. La aplicación permite crear plantillas de personal y asignarlos a un equipo. Etiqueta miembros favoritos y eliminalos.',
+    tags: ['React', 'JavaScript', 'HTML', 'CSS'],
     imageUrl: teambuilder,
     demoUrl: 'https://registro-personal-org.vercel.app/',
     githubUrl: 'https://github.com/StefanoP21/registro-personal-org',
@@ -72,8 +72,8 @@ export const projectsData = [
   {
     title: 'Smart Bank',
     description:
-      'Aplicación web para la gestión de finanzas personales. La aplicación simula un estado de cuenta bancario y cuenta con funcionalidades para ocultar y mostrar el saldo, así como cambiar el tema de la aplicación.',
-    tags: ['React'],
+      'Aplicación web para la gestión de finanzas personales. La aplicación simula un estado de cuenta bancario y cuenta con funcionalidades para ocultar y mostrar el saldo, así como cambiar el tema.',
+    tags: ['React', 'JavaScript', 'HTML'],
     imageUrl: smartbank,
     demoUrl: 'https://smart-bank-liard.vercel.app/',
     githubUrl: 'https://github.com/StefanoP21/smart-bank',

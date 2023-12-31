@@ -34,9 +34,9 @@ export const ProjectCard = ({
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="group bg-gray-100 max-w-[25rem] border border-black/5 overflow-hidden relative sm:max-w-[45rem] sm:pr-8 sm:h-[25rem] mb-5 sm:mb-10 last:mb-0 hover:bg-gray-200 transition"
+      className="group bg-gray-100 max-w-[25rem] border border-black/5 overflow-hidden relative sm:max-w-[38rem] md:max-w-[43rem] sm:pr-8 sm:h-[28rem] md:h-[25rem] mb-5 sm:mb-10 last:mb-0 hover:bg-gray-200 transition"
     >
-      <div className="pt-4 pb-8 px-5 sm:pl-10 max-w-[100%] sm:max-w-[50%] sm:pr-2 sm:pt-10 flex flex-col h-full sm:group-even:ml-[22rem]">
+      <div className="pt-4 pb-8 px-5 sm:pl-10 max-w-[100%] sm:max-w-[50%] sm:pr-2 sm:pt-10 flex flex-col h-full sm:group-even:ml-[18rem] md:group-even:ml-[20rem]">
         <h3 className="text-2xl font-semibold">{title}</h3>
         <p className="mt-2 leading-relaxed text-gray-700 text-justify">
           {description}
@@ -74,13 +74,13 @@ export const ProjectCard = ({
         src={imageUrl}
         alt={title}
         quality={95}
-        className="absolute top-6 sm:top-9 -right-40 w-0 sm:w-[29rem] rounded-t-lg shadow-2xl transition 
+        className="absolute top-6 sm:top-9 -right-40 w-0 sm:w-[27rem] rounded-t-lg shadow-2xl transition 
         group-hover:scale-[1] 
-        group-hover:-translate-x-3
+        group-hover:-translate-x-2
         group-hover:translate-y-1
         group-hover:-rotate-2 
 
-        group-even:group-hover:translate-x-3 
+        group-even:group-hover:translate-x-4
         group-even:group-hover:translate-y-1
         group-even:group-hover:rotate-2 
 
