@@ -12,20 +12,16 @@ export const links = [
     hash: '#home',
   },
   {
-    name: 'Sobre',
-    hash: '#about',
-  },
-  {
-    name: 'Projectos',
-    hash: '#projects',
-  },
-  {
     name: 'Habilidades',
     hash: '#skills',
   },
   {
     name: 'Experiencia',
     hash: '#experience',
+  },
+  {
+    name: 'Projectos',
+    hash: '#projects',
   },
   {
     name: 'Contacto',
