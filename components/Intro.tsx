@@ -54,7 +54,7 @@ export const Intro = () => {
         especializado en el <span className="font-bold">front-end</span>. Me
         apasiona contruir{' '}
         <span className="italic">sitios & aplicaciones web</span>. Mi
-        especialidad es <span className="underline">React (Next.js)</span>.
+        especialidad es <span className="underline">React JS</span>.
       </motion.p>
 
       <motion.div
