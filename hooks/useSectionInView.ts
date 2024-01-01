@@ -4,7 +4,7 @@ import { useActiveSectionContext } from './useActiveSectionContext';
 
 import type { SectionHash } from '@/lib/types';
 
-export const useSectionInView = (sectionHash: SectionHash, threshold = 0.5) => {
+export const useSectionInView = (sectionHash: SectionHash, threshold = 0.8) => {
   const { ref, inView } = useInView({
     threshold: threshold,
   });

@@ -2,9 +2,32 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-// import corpcommentImg from '@/public/corpcomment.png';
-// import rmtdevImg from '@/public/rmtdev.png';
-// import wordanalyticsImg from '@/public/wordanalytics.png';
+
+import { FaAngular, FaJava, FaFigma, FaBootstrap } from 'react-icons/fa';
+import {
+  BiLogoJavascript,
+  BiLogoTypescript,
+  BiLogoFigma,
+} from 'react-icons/bi';
+import {
+  SiNextdotjs,
+  SiPhp,
+  SiSpring,
+  SiMicrosoftsqlserver,
+  SiTailwindcss,
+  SiChakraui,
+  SiJest,
+  SiTestinglibrary,
+  SiVisualstudiocode,
+  SiPostman,
+  SiGnubash,
+  SiWebstorm,
+  SiIntellijidea,
+} from 'react-icons/si';
+import { GrMysql } from 'react-icons/gr';
+import { DiScrum } from 'react-icons/di';
+import { FaGitAlt } from 'react-icons/fa6';
+
 import coffehunter from '@/public/coffehunter.jpg';
 import smartbank from '@/public/smartbank.jpg';
 import teambuilder from '@/public/teambuilder.jpg';
@@ -17,6 +40,10 @@ export const links = [
   {
     name: 'Habilidades',
     hash: '#skills',
+  },
+  {
+    name: 'Recursos',
+    hash: '#tools',
   },
   {
     name: 'Experiencia',
@@ -90,25 +117,122 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  'HTML5',
-  'CSS3',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Angular',
-  'Next.js',
-  'C#',
-  '.NET',
-  'Java',
-  'Spring',
-  'PHP',
-  'MySQL',
-  'Git',
-  'Tailwind',
-  'Bootstrap',
-  'Material UI',
-  'Chakra UI',
-  'Jest',
-  'Testing Library',
-  'Figma',
+  {
+    name: 'JavaScript',
+    icon: React.createElement(BiLogoJavascript),
+    color: '#facc15',
+  },
+  {
+    name: 'TypeScript',
+    icon: React.createElement(BiLogoTypescript),
+    color: '#3b82f6',
+  },
+  {
+    name: 'React',
+    icon: React.createElement(FaReact),
+    color: '#0ea5e9',
+  },
+  {
+    name: 'Next.js',
+    icon: React.createElement(SiNextdotjs),
+    color: '#030712',
+  },
+  {
+    name: 'Angular',
+    icon: React.createElement(FaAngular),
+    color: '#ef4444',
+  },
+  {
+    name: 'Java',
+    icon: React.createElement(FaJava),
+    color: '#f43f5e',
+  },
+  {
+    name: 'Spring',
+    icon: React.createElement(SiSpring),
+    color: '#10b981',
+  },
+  {
+    name: 'PHP',
+    icon: React.createElement(SiPhp),
+    color: '#8b5cf6',
+  },
+  {
+    name: 'MySQL',
+    icon: React.createElement(GrMysql),
+    color: '#2563eb',
+  },
+  {
+    name: 'SQL Server',
+    icon: React.createElement(SiMicrosoftsqlserver),
+    color: '#ef4444',
+  },
+  {
+    name: 'Git',
+    icon: React.createElement(FaGitAlt),
+    color: '#ea580c',
+  },
+  {
+    name: 'Bootstrap',
+    icon: React.createElement(FaBootstrap),
+    color: '#9333ea',
+  },
+  {
+    name: 'Tailwind',
+    icon: React.createElement(SiTailwindcss),
+    color: '#06b6d4',
+  },
+  {
+    name: 'Chakra UI',
+    icon: React.createElement(SiChakraui),
+    color: '#10b981',
+  },
+  {
+    name: 'Jest',
+    icon: React.createElement(SiJest),
+    color: '#db2777',
+  },
+  {
+    name: 'Testing Library',
+    icon: React.createElement(SiTestinglibrary),
+    color: '#dc2626',
+  },
+] as const;
+
+export const toolsData = [
+  {
+    name: 'VS Code',
+    icon: React.createElement(SiVisualstudiocode),
+    color: '#2563eb',
+  },
+  {
+    name: 'Webstorm',
+    icon: React.createElement(SiWebstorm),
+    color: '#0ea5e9',
+  },
+  {
+    name: 'IntelliJ',
+    icon: React.createElement(SiIntellijidea),
+    color: '#dc2626',
+  },
+  {
+    name: 'Postman',
+    icon: React.createElement(SiPostman),
+    color: '#fb923c',
+  },
+  {
+    name: 'Bash',
+    icon: React.createElement(SiGnubash),
+    color: '#030712',
+  },
+  {
+    name: 'Figma',
+    icon: React.createElement(BiLogoFigma),
+    color: '#9333ea',
+  },
+  {
+    name: 'Scrum',
+    icon: React.createElement(DiScrum),
+    color: '#16a34a',
+  },
 ] as const;

@@ -7,11 +7,11 @@ import { ProjectCard } from '../projects';
 import { useSectionInView } from '@/hooks/useSectionInView';
 
 export const Projects = () => {
-  const { ref } = useSectionInView('#projects');
+  const { ref } = useSectionInView('#projects', 0.3);
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-32">
-      <SectionHeading children="Mis Proyectos" />
+    <section ref={ref} id="projects" className="scroll-mt-28 mb-24 sm:mb-32">
+      <SectionHeading heading="Mis Proyectos" />
       <div>
         {projectsData.map((project, index) => (
           <Fragment key={index}>

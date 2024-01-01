@@ -3,26 +3,23 @@
 import { useState } from 'react';
 import { useSectionInView } from '@/hooks/useSectionInView';
 import { SectionHeading } from './shared';
-import { skillsData } from '@/lib/data';
+import { toolsData } from '@/lib/data';
 import { motion } from 'framer-motion';
 import { fadeInAnimationVariants } from '@/helpers/fadeInAnimationVariants';
 
-export const Skills = () => {
-  const { ref } = useSectionInView('#skills');
+export const Tools = () => {
+  const { ref } = useSectionInView('#tools');
   const [hoverIndex, setHoverIndex] = useState<null | number>(null);
 
   return (
-    <motion.section
+    <section
       ref={ref}
-      id="skills"
+      id="tools"
       className="scroll-mt-28 mb-24 max-w-[53rem] text-center sm:mb-32"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.3 }}
     >
-      <SectionHeading heading="Habilidades" />
+      <SectionHeading heading="Recursos" />
       <ul className="flex flex-wrap justify-center gap-4 text-xl text-gray-800">
-        {skillsData.map(({ name, icon, color }, index) => (
+        {toolsData.map(({ name, icon, color }, index) => (
           <motion.li
             key={index}
             className={`item flex items-center gap-1 bg-white border  border-black/[0.1] rounded-xl px-5 py-3 shadow-md transition-all duration-300 ease-in-out cursor-default ${
@@ -45,6 +42,6 @@ export const Skills = () => {
           </motion.li>
         ))}
       </ul>
-    </motion.section>
+    </section>
   );
 };

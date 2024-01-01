@@ -1,4 +1,5 @@
-import { Intro } from '@/components';
+import { Contact, Experience, Intro, Skills } from '@/components';
+import { Tools } from '@/components/Tools';
 import { Projects } from '@/components/projects';
 import { SectionDivider } from '@/components/shared';
 
@@ -7,8 +8,11 @@ export default function Home() {
     <main className="flex flex-col items-center px-4">
       <Intro />
       <SectionDivider />
-
+      <Skills />
+      <Tools />
+      <Experience />
       <Projects />
+      <Contact />
     </main>
   );
 }
