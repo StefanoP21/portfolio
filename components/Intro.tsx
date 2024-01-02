@@ -7,9 +7,11 @@ import Link from 'next/link';
 import { PiPaperPlaneRightBold, PiDownloadBold } from 'react-icons/pi';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { useSectionInView } from '@/hooks/useSectionInView';
+import { useActiveSectionContext } from '@/hooks/useActiveSectionContext';
 
 export const Intro = () => {
   const { ref } = useSectionInView('#home');
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -84,6 +86,10 @@ export const Intro = () => {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-100 transition"
+          onClick={() => {
+            setActiveSection('#contact');
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contácteme aquí
           <PiPaperPlaneRightBold className="text-[1.1rem] opacity-70 group-hover:translate-x-1 transition" />
@@ -92,7 +98,7 @@ export const Intro = () => {
         <a
           href="/Stefano-ES.pdf"
           target="_blank"
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition border border-black/10"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition borderBlack"
         >
           Descargar CV{' '}
           <PiDownloadBold className="text-[1.2rem] opacity-70 group-hover:translate-y-1 transition" />
@@ -102,7 +108,7 @@ export const Intro = () => {
           <a
             href="https://www.linkedin.com/in/aldair-palomino/"
             target="_blank"
-            className="bg-white p-4 text-[1.2rem] text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition border border-black/10"
+            className="bg-white p-4 text-[1.2rem] text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition borderBlack"
           >
             <FaLinkedin />
           </a>
@@ -110,7 +116,7 @@ export const Intro = () => {
           <a
             href="https://github.com/StefanoP21"
             target="_blank"
-            className="bg-white p-4 text-[1.2rem] text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition border border-black/10"
+            className="bg-white p-4 text-[1.2rem] text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition borderBlack"
           >
             <FaGithub />
           </a>

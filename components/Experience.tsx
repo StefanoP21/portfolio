@@ -18,7 +18,7 @@ export const Experience = () => {
       <SectionHeading heading="Mi Experiencia" />
       <VerticalTimeline lineColor="">
         {experiencesData.map(
-          ({ title, location, description, icon, date, tags }, index) => (
+          ({ title, location, description, icon, date, color }, index) => (
             <Fragment key={index}>
               <VerticalTimelineElement
                 visible={true}
@@ -35,23 +35,13 @@ export const Experience = () => {
                 date={date}
                 icon={icon}
                 iconStyle={{
-                  background: '#0ea5e9',
+                  background: `${color}`,
                   fontSize: '1.5rem',
                 }}
               >
                 <h3 className="font-semibold capitalize">{title}</h3>
                 <p className="font-normal !mt-0">{location}</p>
                 <p className="!mt-3 !font-normal text-justify">{description}</p>
-                <ul className="flex flex-wrap mt-4 mb-3 gap-3">
-                  {tags.map((tag, index) => (
-                    <li
-                      key={index}
-                      className="bg-black/[0.7] px-2 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-lg"
-                    >
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
               </VerticalTimelineElement>
             </Fragment>
           )

@@ -1,5 +1,11 @@
 import React from 'react';
-import { FaReact, FaAngular, FaJava, FaBootstrap } from 'react-icons/fa';
+import {
+  FaReact,
+  FaAngular,
+  FaJava,
+  FaBootstrap,
+  FaCode,
+} from 'react-icons/fa';
 import {
   BiLogoJavascript,
   BiLogoTypescript,
@@ -20,7 +26,7 @@ import {
   SiWebstorm,
   SiIntellijidea,
 } from 'react-icons/si';
-import { GrMysql } from 'react-icons/gr';
+import { GrMysql, GrOracle } from 'react-icons/gr';
 import { DiScrum } from 'react-icons/di';
 import { FaGitAlt } from 'react-icons/fa6';
 
@@ -178,17 +184,35 @@ export const toolsData = [
 
 export const experiencesData = [
   {
+    title: 'Oracle Next Education',
+    location: 'Lima, Perú',
+    description:
+      'Me gradué después de 8 meses de aprendizaje intensivo en el programa Oracle Next Education (ONE). Aprendí sobre programación con JavaScript, desarrollo Frontend con React, bases de datos relacionales con MySQL y control de versiones con Git. Además, aprendí sobre metodologías ágiles y trabajo en equipo. ',
+    icon: React.createElement(GrOracle),
+    date: '2023',
+    color: '#ef4444',
+  },
+  {
     title: 'Hackathon CGR-2023',
     location: 'Lima, Perú',
     description:
-      'Aplicación web para el primer hackathon de la Contraloría General de la República del Perú. La aplicación web permite a los ciudadanos reportar las obras públicas en el contexto del Fenómeno del Niño Costero y ofrece cursos de capacitación online.',
-    icon: React.createElement(FaReact),
+      'Construí una aplicación web en React para ayudar al control gubernamental de las obras públicas en el contexto del Fenómeno del Niño Costero, como propuesta de solución al desafío planteado por la Contraloría General de la República del Perú.',
+    icon: React.createElement(FaCode),
     date: '2023',
-    tags: ['React', 'Chakra UI', 'JavaScript'],
+    color: '#0ea5e9',
   },
 ] as const;
 
 export const projectsData = [
+  {
+    title: 'Apuchay',
+    description:
+      'Aplicación web para mejorar el control de las obras públicas. La aplicación cuenta con una interfaz orientada al ciudadano común. Además, cuenta con un sistema de reportes de obras y cursos de capacitación online.',
+    tags: ['React', 'Chakra UI', 'JavaScript'],
+    imageUrl: teambuilder,
+    demoUrl: 'https://registro-personal-org.vercel.app/',
+    githubUrl: 'https://github.com/StefanoP21/registro-personal-org',
+  },
   {
     title: 'Organizador de Equipos',
     description:
