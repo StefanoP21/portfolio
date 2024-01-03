@@ -123,7 +123,7 @@ export const skillsData = [
     color: '#9333ea',
   },
   {
-    name: 'Tailwind',
+    name: 'Tailwind CSS',
     icon: React.createElement(SiTailwindcss),
     color: '#06b6d4',
   },

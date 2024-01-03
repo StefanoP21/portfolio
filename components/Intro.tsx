@@ -61,7 +61,7 @@ export const Intro = () => {
         <span className="font-bold">Hola 👋,</span> soy{' '}
         <span className="font-bold">Stefano.</span> Soy un{' '}
         <span className="font-bold">desarrollador de software</span>{' '}
-        especializado en el <span className="font-bold">front-end</span>. Me
+        especializado en el <span className="font-bold">Front-end</span>. Me
         apasiona contruir{' '}
         <span className="italic">sitios & aplicaciones web</span>. Mi
         especialidad es <span className="underline">React</span>.

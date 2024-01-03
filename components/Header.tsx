@@ -45,7 +45,7 @@ export const Header = () => {
 
                 {link.hash === activeSection && (
                   <motion.span
-                    className="bg-blue-100 rounded-full absolute inset-0 -z-10"
+                    className="bg-gray-200 rounded-full absolute inset-0 -z-10"
                     layoutId="activeSection"
                     transition={{ type: 'spring', stiffness: 400, damping: 30 }}
                   ></motion.span>
