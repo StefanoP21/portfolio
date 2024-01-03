@@ -5,7 +5,7 @@ import { useSectionInView } from '@/hooks/useSectionInView';
 import { SectionHeading } from './shared';
 import { toolsData } from '@/lib/data';
 import { motion } from 'framer-motion';
-import { fadeInAnimationVariants } from '@/helpers/fadeInAnimationVariants';
+import { fadeInAnimationVariants } from '@/helpers';
 
 export const Tools = () => {
   const { ref } = useSectionInView('#tools');

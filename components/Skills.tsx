@@ -5,7 +5,7 @@ import { useSectionInView } from '@/hooks/useSectionInView';
 import { SectionHeading } from './shared';
 import { skillsData } from '@/lib/data';
 import { motion } from 'framer-motion';
-import { fadeInAnimationVariants } from '@/helpers/fadeInAnimationVariants';
+import { fadeInAnimationVariants } from '@/helpers';
 
 export const Skills = () => {
   const { ref } = useSectionInView('#skills');
@@ -25,9 +25,8 @@ export const Skills = () => {
         {skillsData.map(({ name, icon, color }, index) => (
           <motion.li
             key={index}
-            className={`item flex items-center gap-1 bg-white border  border-black/[0.1] rounded-xl px-5 py-3 shadow-md transition-all duration-300 ease-in-out cursor-default ${
-              hoverIndex === index ? 'border-custom-color' : ''
-            }`}
+            className={`item flex items-center gap-1 bg-white border  border-black/[0.1] rounded-xl px-5 py-3 shadow-md transition-all duration-300 ease-in-out cursor-default);
+             ${hoverIndex === index ? 'border-custom-color' : ''}`}
             onMouseEnter={() => setHoverIndex(index)}
             onMouseLeave={() => setHoverIndex(null)}
             style={hoverIndex === index ? { borderColor: color } : {}}

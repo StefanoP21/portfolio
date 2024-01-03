@@ -1,4 +1,5 @@
-import { Contact, Experience, Intro, Skills, Tools } from '@/components';
+import { Experience, Intro, Skills, Tools } from '@/components';
+import { Contact } from '@/components/contact';
 import { Projects } from '@/components/projects';
 import { SectionDivider } from '@/components/shared';
 

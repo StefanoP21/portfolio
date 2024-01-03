@@ -1,9 +1,11 @@
 'use client';
 
-import { SectionHeading } from './shared';
+import { sendEmail } from '@/actions/sendEmail';
+import { SectionHeading } from '../shared';
 import { useSectionInView } from '@/hooks/useSectionInView';
 import { motion } from 'framer-motion';
-import { IoSend } from 'react-icons/io5';
+import { SubmitButton } from './SubmitButton';
+import toast from 'react-hot-toast';
 
 export const Contact = () => {
   const { ref } = useSectionInView('#contact');
@@ -20,37 +22,45 @@ export const Contact = () => {
     >
       <SectionHeading heading="Contacto" />
       <p className="text-gray-700 -mt-4">
-        Póngase en contacto conmigo directamente en{' '}
+        Póngase en contacto conmigo a través del siguiente formulario o
+        directamente a{' '}
         <a
           className="underline font-medium hover:text-blue-700 transition duration-300"
           href="mailto:stefanop21@outlook.es"
         >
           stefanop21@outlook.es
-        </a>{' '}
-        o utilice el siguiente formulario.
+        </a>
       </p>
 
-      <form className="flex flex-col mt-10">
+      <form
+        className="flex flex-col mt-10"
+        action={async (formData) => {
+          const { data, error } = await sendEmail(formData);
+
+          if (error) {
+            toast.error(error);
+            return;
+          }
+
+          toast.success('¡Mensaje enviado! Le responderé lo antes posible');
+        }}
+      >
         <input
           className="h-14 px-4 rounded-lg borderBlack"
+          name="senderEmail"
           type="email"
           placeholder="Correo electrónico"
           required
-          maxLength={100}
+          maxLength={500}
         />
         <textarea
           className="h-52 my-3 p-4 rounded-lg borderBlack"
+          name="message"
           placeholder="Escriba su mensaje aquí..."
           required
-          maxLength={500}
+          maxLength={5000}
         />
-        <button
-          type="submit"
-          className="group flex items-center justify-center gap-2 h-[3rem] w-[7rem] mt-2 bg-gray-900 text-white rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-100 transition"
-        >
-          Enviar{' '}
-          <IoSend className="opacity-70 group-hover:translate-x-1 transition" />
-        </button>
+        <SubmitButton />
       </form>
     </motion.section>
   );
