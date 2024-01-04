@@ -73,7 +73,7 @@ export const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="italic">
-          ⚡ Fun fact - "This is a feature, not a bug"
+          Fun fact - "This is a feature, not a bug"
         </span>
       </motion.p>
 
