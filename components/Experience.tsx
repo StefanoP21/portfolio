@@ -1,5 +1,6 @@
 'use client';
 
+import { useTheme } from '@/hooks/useTheme';
 import { SectionHeading } from './shared';
 import { useSectionInView } from '@/hooks/useSectionInView';
 import { experiencesData } from '@/lib/data';
@@ -12,6 +13,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 export const Experience = () => {
   const { ref } = useSectionInView('#experience');
+  const { theme } = useTheme();
 
   return (
     <section ref={ref} id="experience" className="scroll-mt-28 mb-24 sm:mb-32">
@@ -23,9 +25,12 @@ export const Experience = () => {
               <VerticalTimelineElement
                 visible={true}
                 contentStyle={{
-                  backgroundColor: '#f3f4f6',
+                  backgroundColor: theme === 'light' ? '#f3f4f6' : '#1f2937',
                   boxShadow: 'none',
-                  border: '1px solid rgba(0, 0, 0, 0.1)',
+                  border:
+                    theme === 'light'
+                      ? '1px solid rgba(0, 0, 0, 0.1)'
+                      : '1px solid rgba(255, 255, 255, 0.1)',
                   textAlign: 'left',
                   padding: '1.5rem 2rem',
                 }}
@@ -41,7 +46,9 @@ export const Experience = () => {
               >
                 <h3 className="font-semibold capitalize">{title}</h3>
                 <p className="font-normal !mt-0">{location}</p>
-                <p className="!mt-3 !font-normal text-justify">{description}</p>
+                <p className="!mt-3 !font-normal text-justify dark:text-white/70">
+                  {description}
+                </p>
               </VerticalTimelineElement>
             </Fragment>
           )

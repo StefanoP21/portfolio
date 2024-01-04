@@ -21,11 +21,11 @@ export const Contact = () => {
       viewport={{ once: true }}
     >
       <SectionHeading heading="Contacto" />
-      <p className="text-gray-700 -mt-4">
+      <p className="text-gray-700 -mt-4 dark:text-white/90">
         Póngase en contacto conmigo a través del siguiente formulario o
         directamente a{' '}
         <a
-          className="underline font-medium hover:text-blue-700 transition duration-300"
+          className="underline font-semibold hover:text-gray-950 duration-300 transition dark:hover:text-white"
           href="mailto:stefanop21@outlook.es"
         >
           stefanop21@outlook.es
@@ -46,7 +46,7 @@ export const Contact = () => {
         }}
       >
         <input
-          className="h-14 px-4 rounded-lg borderBlack"
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-gray-700 dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"
           type="email"
           placeholder="Correo electrónico"
@@ -54,7 +54,7 @@ export const Contact = () => {
           maxLength={500}
         />
         <textarea
-          className="h-52 my-3 p-4 rounded-lg borderBlack"
+          className="h-52 my-3 p-4 rounded-lg borderBlack dark:bg-gray-700 dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           placeholder="Escriba su mensaje aquí..."
           required

@@ -21,12 +21,13 @@ export const Skills = () => {
       transition={{ delay: 0.3 }}
     >
       <SectionHeading heading="Habilidades" />
-      <ul className="flex flex-wrap justify-center gap-4 text-xl text-gray-800">
+      <ul className="flex flex-wrap justify-center gap-4 text-xl text-gray-800 dark:text-white">
         {skillsData.map(({ name, icon, color }, index) => (
           <motion.li
             key={index}
-            className={`item flex items-center gap-1 bg-white border  border-black/[0.1] rounded-xl px-5 py-3 shadow-md transition-all duration-300 ease-in-out cursor-default);
-             ${hoverIndex === index ? 'border-custom-color' : ''}`}
+            className={`item flex items-center gap-1 border border-black/[0.1] rounded-xl px-5 py-3 shadow-md transition-all duration-300 ease-in-out cursor-default dark:border-white/[0.2] ${
+              hoverIndex === index ? 'border-custom-color' : ''
+            }`}
             onMouseEnter={() => setHoverIndex(index)}
             onMouseLeave={() => setHoverIndex(null)}
             style={hoverIndex === index ? { borderColor: color } : {}}

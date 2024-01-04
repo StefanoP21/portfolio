@@ -34,6 +34,8 @@ import coffehunter from '@/public/coffehunter.jpg';
 import smartbank from '@/public/smartbank.jpg';
 import teambuilder from '@/public/teambuilder.jpg';
 
+import rmtdev from '@/public/corpcomment.png';
+
 export const links = [
   {
     name: 'Inicio',
@@ -209,7 +211,7 @@ export const projectsData = [
     description:
       'Aplicación web para mejorar el control de las obras públicas. La aplicación cuenta con una interfaz orientada al ciudadano común. Además, cuenta con un sistema de reportes de obras y cursos de capacitación online.',
     tags: ['React', 'Chakra UI', 'JavaScript'],
-    imageUrl: teambuilder,
+    imageUrl: rmtdev,
     demoUrl: 'https://registro-personal-org.vercel.app/',
     githubUrl: 'https://github.com/StefanoP21/registro-personal-org',
   },

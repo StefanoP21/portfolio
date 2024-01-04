@@ -34,18 +34,18 @@ export const ProjectCard = ({
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="group bg-gray-100 max-w-[25rem] border border-black/5 overflow-hidden relative sm:max-w-[38rem] md:max-w-[43rem] sm:pr-8 sm:h-[28rem] md:h-[25rem] mb-5 sm:mb-10 last:mb-0 hover:bg-gray-200 transition"
+      className="group bg-gray-100 max-w-[25rem] border border-black/5 overflow-hidden relative sm:max-w-[38rem] md:max-w-[43rem] lg:max-w-[50rem] sm:pr-8 sm:h-[28rem] md:h-[25rem] lg:h-[28rem] mb-5 sm:mb-10 last:mb-0 hover:bg-gray-200 transition dark:bg-gray-950/20 dark:hover:bg-gray-950/40 rounded-xl"
     >
-      <div className="pt-4 pb-8 px-5 sm:pl-10 max-w-[100%] sm:max-w-[50%] sm:pr-2 sm:pt-10 flex flex-col h-full sm:group-even:ml-[18rem] md:group-even:ml-[20rem]">
-        <h3 className="text-2xl font-semibold">{title}</h3>
-        <p className="mt-2 leading-relaxed text-gray-700 text-justify">
+      <div className="pt-4 pb-8 px-5 sm:pl-10 max-w-[100%] sm:max-w-[50%] sm:pr-2 sm:pt-10 flex flex-col h-full sm:group-even:ml-[18rem] md:group-even:ml-[20rem] lg:group-even:ml-[24rem]">
+        <h3 className="text-2xl font-semibold lg:text-3xl">{title}</h3>
+        <p className="mt-2 leading-relaxed text-gray-700 text-justify dark:text-white/60 lg:text-lg lg:mt-4">
           {description}
         </p>
         <ul className="flex flex-wrap mt-4 mb-4 gap-2 sm:mt-auto sm:mb-auto">
           {tags.map((tag, index) => (
             <li
               key={index}
-              className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
+              className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/90 lg:text-[0.8rem]"
             >
               {tag}
             </li>
@@ -56,14 +56,14 @@ export const ProjectCard = ({
           <a
             href={demoUrl}
             target="_blank"
-            className="bg-gray-900 text-white px-3 py-1 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            className="bg-gray-900 text-white px-3 py-1 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:bg-gray-950/60"
           >
-            <CgWebsite className="text-[1.2rem] opacity-70 " /> Demo
+            <CgWebsite className="text-[1.2rem] opacity-70" /> Demo
           </a>
           <a
             href={githubUrl}
             target="_blank"
-            className="bg-white px-3 py-1 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack"
+            className="bg-white px-3 py-1 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack dark:bg-white/20 dark:text-white/90"
           >
             <FaGithub className="text-[1.2rem] opacity-70" /> GitHub
           </a>
@@ -74,7 +74,7 @@ export const ProjectCard = ({
         src={imageUrl}
         alt={title}
         quality={95}
-        className="absolute top-6 sm:top-9 -right-40 w-0 sm:w-[27rem] rounded-t-lg shadow-2xl transition 
+        className="absolute top-6 sm:top-9 -right-40 w-0 sm:w-[26.5rem] md:w-[28.5rem] lg:w-[32rem] rounded-t-lg shadow-2xl transition 
         group-hover:scale-[1] 
         group-hover:-translate-x-2
         group-hover:translate-y-1

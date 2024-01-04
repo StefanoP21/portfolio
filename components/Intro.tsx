@@ -98,7 +98,7 @@ export const Intro = () => {
         <a
           href="/Stefano-ES.pdf"
           target="_blank"
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition borderBlack"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition borderBlack dark:bg-white/15"
         >
           Descargar CV{' '}
           <PiDownloadBold className="text-[1.2rem] opacity-70 group-hover:translate-y-1 transition" />
@@ -108,7 +108,7 @@ export const Intro = () => {
           <a
             href="https://www.linkedin.com/in/aldair-palomino/"
             target="_blank"
-            className="bg-white p-4 text-[1.2rem] text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition borderBlack"
+            className="bg-white p-4 text-[1.2rem] text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition borderBlack dark:bg-white/15 dark:text-white/90"
           >
             <FaLinkedin />
           </a>
@@ -116,7 +116,7 @@ export const Intro = () => {
           <a
             href="https://github.com/StefanoP21"
             target="_blank"
-            className="bg-white p-4 text-[1.2rem] text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition borderBlack"
+            className="bg-white p-4 text-[1.2rem] text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition borderBlack dark:bg-white/15 dark:text-white/90"
           >
             <FaGithub />
           </a>
