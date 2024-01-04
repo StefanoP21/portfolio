@@ -212,8 +212,8 @@ export const projectsData = [
       'Aplicación web para mejorar el control de las obras públicas. La aplicación cuenta con una interfaz orientada al ciudadano común. Además, cuenta con un sistema de reportes de obras y cursos de capacitación online.',
     tags: ['React', 'Chakra UI', 'JavaScript'],
     imageUrl: rmtdev,
-    demoUrl: 'https://registro-personal-org.vercel.app/',
-    githubUrl: 'https://github.com/StefanoP21/registro-personal-org',
+    demoUrl: 'https://stefanop21.github.io/hackaton-cgr2023/',
+    githubUrl: 'https://github.com/StefanoP21/hackaton-cgr2023',
   },
   {
     title: 'Organizador de Equipos',
