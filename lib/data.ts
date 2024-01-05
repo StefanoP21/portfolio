@@ -253,7 +253,7 @@ export const projectsData = [
     tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'PHP', 'MySQL'],
     imageUrl: coffehunter,
     demoUrl: 'https://stefanop21.000webhostapp.com/',
-    githubUrl: 'https://github.com/StefanoP21/coffehunter-responsive',
+    githubUrl: 'https://github.com/StefanoP21/coffehunter',
   },
   {
     title: 'Growth App',
