@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { sendEmail } from '@/actions/sendEmail';
 import { SectionHeading } from '../shared';
 import { useSectionInView } from '@/hooks/useSectionInView';
@@ -9,6 +10,8 @@ import toast from 'react-hot-toast';
 
 export const Contact = () => {
   const { ref } = useSectionInView('#contact');
+  const [senderEmail, setSenderEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   return (
     <motion.section
@@ -42,6 +45,11 @@ export const Contact = () => {
             return;
           }
 
+          if (data) {
+            setSenderEmail('');
+            setMessage('');
+          }
+
           toast.success('¡Mensaje enviado! Le responderé lo antes posible');
         }}
       >
@@ -52,6 +60,8 @@ export const Contact = () => {
           placeholder="Correo electrónico"
           required
           maxLength={500}
+          value={senderEmail}
+          onChange={(e) => setSenderEmail(e.target.value)}
         />
         <textarea
           className="h-52 my-3 p-4 rounded-lg borderBlack dark:bg-gray-700 dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all dark:outline-none"
@@ -59,6 +69,8 @@ export const Contact = () => {
           placeholder="Escriba su mensaje aquí..."
           required
           maxLength={5000}
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
         />
         <SubmitButton />
       </form>
