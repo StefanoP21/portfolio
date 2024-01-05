@@ -11,7 +11,7 @@ export const Footer = () => {
         en{' '}
         <a
           className="underline font-semibold hover:text-gray-950 duration-300 dark:hover:text-gray-200 transition"
-          href=""
+          href="https://github.com/StefanoP21/portfolio"
           target="_blank"
           rel="noopener noreferrer"
         >
