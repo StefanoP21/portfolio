@@ -1,10 +1,11 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
-import { Footer, Header } from '@/components';
+import { Footer, Gradient, Header } from '@/components';
 import { ActiveSectionContextProvider } from '@/context/ActiveSectionContextProvider';
 import { Toaster } from 'react-hot-toast';
 import { ThemeSwitch } from '@/theme/ThemeSwitch';
 import { ThemeContextProvider } from '@/context/ThemeContextProvider';
+import { useTheme } from '@/hooks/useTheme';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,14 +24,8 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-32 dark:bg-gray-900 dark:text-gray-200 dark:text-opacity-90`}
       >
-        <div
-          className="absolute top-0 left-0 h-[35rem] w-full z-[-10] rounded-full blur-[10rem]"
-          style={{
-            backgroundImage: 'linear-gradient(to right, #4ade80, #a78bfa)',
-          }}
-        ></div>
-
         <ThemeContextProvider>
+          <Gradient />
           <ActiveSectionContextProvider>
             <Header />
             {children}

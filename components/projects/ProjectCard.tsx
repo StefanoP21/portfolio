@@ -56,14 +56,14 @@ export const ProjectCard = ({
           <a
             href={demoUrl}
             target="_blank"
-            className="bg-gray-900 text-white px-3 py-1 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:bg-gray-950/60"
+            className="bg-gray-900 text-white px-3 py-1 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:bg-gray-800 dark:hover:bg-gray-800"
           >
             <CgWebsite className="text-[1.2rem] opacity-70" /> Demo
           </a>
           <a
             href={githubUrl}
             target="_blank"
-            className="bg-white px-3 py-1 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack dark:bg-white/20 dark:text-white/90"
+            className="bg-white px-3 py-1 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack dark:bg-gray-600 dark:text-white/90"
           >
             <FaGithub className="text-[1.2rem] opacity-70" /> GitHub
           </a>

@@ -30,11 +30,15 @@ import { GrMysql, GrOracle } from 'react-icons/gr';
 import { DiScrum } from 'react-icons/di';
 import { FaGitAlt } from 'react-icons/fa6';
 
-import coffehunter from '@/public/coffehunter.jpg';
-import smartbank from '@/public/smartbank.jpg';
-import teambuilder from '@/public/teambuilder.jpg';
-
-import rmtdev from '@/public/corpcomment.png';
+import apuchay from '@/public/apuchay.png';
+import giphy from '@/public/giphy.png';
+import teambuilder from '@/public/teambuilder.png';
+import smartbank from '@/public/smartbank.png';
+import coffehunter from '@/public/coffehunter.png';
+import growth from '@/public/growth.png';
+import pokedex from '@/public/pokedex.png';
+import todoapp from '@/public/todoapp.png';
+import doguitoform from '@/public/doguitoform.png';
 
 export const links = [
   {
@@ -186,15 +190,6 @@ export const toolsData = [
 
 export const experiencesData = [
   {
-    title: 'Oracle Next Education',
-    location: 'Lima, Perú',
-    description:
-      'Me gradué después de 8 meses de aprendizaje intensivo en el programa Oracle Next Education (ONE). Aprendí sobre programación con JavaScript, desarrollo Frontend con React, bases de datos relacionales con MySQL y control de versiones con Git. Además, aprendí sobre metodologías ágiles y trabajo en equipo. ',
-    icon: React.createElement(GrOracle),
-    date: '2023',
-    color: '#ef4444',
-  },
-  {
     title: 'Hackathon CGR-2023',
     location: 'Lima, Perú',
     description:
@@ -202,6 +197,15 @@ export const experiencesData = [
     icon: React.createElement(FaCode),
     date: '2023',
     color: '#0ea5e9',
+  },
+  {
+    title: 'Oracle Next Education',
+    location: 'Lima, Perú',
+    description:
+      'Me gradué después de 8 meses de aprendizaje intensivo en el programa Oracle Next Education (ONE). Aprendí sobre programación con JavaScript, desarrollo Frontend con React, bases de datos relacionales con MySQL y control de versiones con Git. Además, aprendí sobre metodologías ágiles y trabajo en equipo. ',
+    icon: React.createElement(GrOracle),
+    date: '2023',
+    color: '#ef4444',
   },
 ] as const;
 
@@ -211,7 +215,7 @@ export const projectsData = [
     description:
       'Aplicación web para mejorar el control de las obras públicas. La aplicación cuenta con una interfaz orientada al ciudadano común. Además, cuenta con un sistema de reportes de obras y cursos de capacitación online.',
     tags: ['React', 'Chakra UI', 'JavaScript'],
-    imageUrl: rmtdev,
+    imageUrl: apuchay,
     demoUrl: 'https://stefanop21.github.io/hackaton-cgr2023/',
     githubUrl: 'https://github.com/StefanoP21/hackaton-cgr2023',
   },
@@ -223,6 +227,15 @@ export const projectsData = [
     imageUrl: teambuilder,
     demoUrl: 'https://registro-personal-org.vercel.app/',
     githubUrl: 'https://github.com/StefanoP21/registro-personal-org',
+  },
+  {
+    title: 'Giphy',
+    description:
+      'Aplicación web para ver GIFs. La aplicación cuenta con un buscador de GIFs y utiliza la API de GIPHY Developers para mostrar los resultados.',
+    tags: ['React', 'Vite', 'JavaScript', 'HTML', 'CSS'],
+    imageUrl: giphy,
+    demoUrl: 'https://stefanop21.github.io/giphy-app/',
+    githubUrl: 'https://github.com/StefanoP21/giphy-app',
   },
   {
     title: 'Smart Bank',
@@ -239,7 +252,43 @@ export const projectsData = [
       'Aplicación web para una marca de café peruana. La aplicación web cuenta con un catálogo de productos, una galería de fotos, un formulario de contacto y un CRUD para administrar los productos. ',
     tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'PHP', 'MySQL'],
     imageUrl: coffehunter,
-    demoUrl: 'https://stefanop21.github.io/coffehunter-responsive/',
+    demoUrl: 'https://stefanop21.000webhostapp.com/',
     githubUrl: 'https://github.com/StefanoP21/coffehunter-responsive',
+  },
+  {
+    title: 'Growth App',
+    description:
+      'Landing page para una startup de dashboards online. La aplicación cuenta con una interfaz moderna y un diseño responsivo. Además, cuenta con un múltiples efectos de interacción con el usuario.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    imageUrl: growth,
+    demoUrl: 'https://stefanop21.github.io/saas-website/',
+    githubUrl: 'https://github.com/StefanoP21/saas-website',
+  },
+  {
+    title: 'Pokédex',
+    description:
+      'Aplicación web para ver información de los pokémon de la primera generación. La aplicación utiliza la API de PokéAPI para mostrar los resultados. Además, cuenta con un listado de filtros para mostrar pokémon por tipo.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    imageUrl: pokedex,
+    demoUrl: 'https://stefanop21.github.io/pokedex/',
+    githubUrl: 'https://github.com/StefanoP21/pokedex',
+  },
+  {
+    title: 'TODO App',
+    description:
+      'Aplicación web para gestionar tareas. La aplicación permite crear y eliminar tareas. Además, cuenta con un sistema de etiquetas para clasificar las tareas cumplidas.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    imageUrl: todoapp,
+    demoUrl: 'https://stefanop21.github.io/todo-app/',
+    githubUrl: 'https://github.com/StefanoP21/todo-app',
+  },
+  {
+    title: 'PetShop',
+    description:
+      'Aplicación web para la gestión de formularios de una tienda de mascotas. La aplicación cuenta con un formulario de registro. Además, cuenta con un sistema de validación de campos y un sistema de alertas.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    imageUrl: doguitoform,
+    demoUrl: 'https://stefanop21.github.io/formulario-petshop/',
+    githubUrl: 'https://github.com/StefanoP21/formulario-petshop',
   },
 ] as const;
