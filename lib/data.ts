@@ -29,6 +29,7 @@ import {
 import { GrMysql, GrOracle } from 'react-icons/gr';
 import { DiScrum } from 'react-icons/di';
 import { FaGitAlt } from 'react-icons/fa6';
+import { GoCopilot } from 'react-icons/go';
 
 import apuchay from '@/public/apuchay.png';
 import giphy from '@/public/giphy.png';
@@ -134,11 +135,6 @@ export const skillsData = [
     color: '#06b6d4',
   },
   {
-    name: 'Chakra UI',
-    icon: React.createElement(SiChakraui),
-    color: '#10b981',
-  },
-  {
     name: 'Jest',
     icon: React.createElement(SiJest),
     color: '#db2777',
@@ -177,9 +173,19 @@ export const toolsData = [
     color: '#030712',
   },
   {
+    name: 'Github Copilot',
+    icon: React.createElement(GoCopilot),
+    color: '#9333ea',
+  },
+  {
+    name: 'Chakra UI',
+    icon: React.createElement(SiChakraui),
+    color: '#10b981',
+  },
+  {
     name: 'Figma',
     icon: React.createElement(BiLogoFigma),
-    color: '#9333ea',
+    color: '#db2777',
   },
   {
     name: 'Scrum',
