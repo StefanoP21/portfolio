@@ -5,6 +5,7 @@ import {
   FaJava,
   FaBootstrap,
   FaCode,
+  FaTrello,
 } from 'react-icons/fa';
 import {
   BiLogoJavascript,
@@ -186,6 +187,11 @@ export const toolsData = [
     name: 'Figma',
     icon: React.createElement(BiLogoFigma),
     color: '#db2777',
+  },
+  {
+    name: 'Trello',
+    icon: React.createElement(FaTrello),
+    color: '#1d4ed8',
   },
   {
     name: 'Scrum',
