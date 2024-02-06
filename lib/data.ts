@@ -32,6 +32,7 @@ import { DiScrum } from 'react-icons/di';
 import { FaGitAlt } from 'react-icons/fa6';
 import { GoCopilot } from 'react-icons/go';
 
+import tarotspa from '@/public/tarotspa.png';
 import apuchay from '@/public/apuchay.png';
 import giphy from '@/public/giphy.png';
 import teambuilder from '@/public/teambuilder.png';
@@ -223,6 +224,15 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: 'Tarot Cards',
+    description:
+      'Aplicación web para leer cartas de tarot con temática CyberPunk 2077. La aplicación cuenta con un sistema de lectura y búsqueda de cartas y un sistema de interpretación de resultados. Además, cuenta con un sistema de autenticación de usuario y protección de rutas.',
+    tags: ['React', 'JavaScript', 'Tailwind CSS'],
+    imageUrl: tarotspa,
+    demoUrl: 'https://tarot-spa.vercel.app/',
+    githubUrl: 'https://github.com/StefanoP21/tarot-spa',
+  },
+  {
     title: 'Apuchay',
     description:
       'Aplicación web para mejorar el control de las obras públicas. La aplicación cuenta con una interfaz orientada al ciudadano común. Además, cuenta con un sistema de reportes de obras y cursos de capacitación online.',
@@ -235,7 +245,7 @@ export const projectsData = [
     title: 'Organizador de Equipos',
     description:
       'Aplicación web para ayudar en la organización de equipos de trabajo. La aplicación permite crear plantillas de personal y asignarlos a un equipo. Etiqueta miembros favoritos y eliminalos.',
-    tags: ['React', 'JavaScript', 'HTML', 'CSS'],
+    tags: ['React', 'JavaScript'],
     imageUrl: teambuilder,
     demoUrl: 'https://registro-personal-org.vercel.app/',
     githubUrl: 'https://github.com/StefanoP21/registro-personal-org',
@@ -244,7 +254,7 @@ export const projectsData = [
     title: 'Giphy',
     description:
       'Aplicación web para ver GIFs. La aplicación cuenta con un buscador de GIFs y utiliza la API de GIPHY Developers para mostrar los resultados.',
-    tags: ['React', 'Vite', 'JavaScript', 'HTML', 'CSS'],
+    tags: ['React', 'JavaScript', 'Vite'],
     imageUrl: giphy,
     demoUrl: 'https://stefanop21.github.io/giphy-app/',
     githubUrl: 'https://github.com/StefanoP21/giphy-app',
@@ -253,7 +263,7 @@ export const projectsData = [
     title: 'Smart Bank',
     description:
       'Aplicación web para la gestión de finanzas personales. La aplicación simula un estado de cuenta bancario y cuenta con funcionalidades para ocultar y mostrar el saldo, así como cambiar el tema.',
-    tags: ['React', 'JavaScript', 'HTML'],
+    tags: ['React', 'JavaScript'],
     imageUrl: smartbank,
     demoUrl: 'https://smart-bank-liard.vercel.app/',
     githubUrl: 'https://github.com/StefanoP21/smart-bank',
