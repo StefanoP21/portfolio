@@ -19,6 +19,7 @@ import {
   SiMicrosoftsqlserver,
   SiTailwindcss,
   SiChakraui,
+  SiMui,
   SiJest,
   SiTestinglibrary,
   SiVisualstudiocode,
@@ -26,12 +27,16 @@ import {
   SiGnubash,
   SiWebstorm,
   SiIntellijidea,
+  SiFirebase,
+  SiRedux,
+  SiReactrouter,
 } from 'react-icons/si';
 import { GrMysql, GrOracle } from 'react-icons/gr';
-import { DiScrum } from 'react-icons/di';
+// import { DiScrum } from 'react-icons/di';
 import { FaGitAlt } from 'react-icons/fa6';
 import { GoCopilot } from 'react-icons/go';
 
+import journal from '@/public/journal.png';
 import tarotspa from '@/public/tarotspa.png';
 import apuchay from '@/public/apuchay.png';
 import giphy from '@/public/giphy.png';
@@ -39,8 +44,8 @@ import teambuilder from '@/public/teambuilder.png';
 import smartbank from '@/public/smartbank.png';
 import coffehunter from '@/public/coffehunter.png';
 import growth from '@/public/growth.png';
-import pokedex from '@/public/pokedex.png';
-import todoapp from '@/public/todoapp.png';
+// import pokedex from '@/public/pokedex.png';
+// import todoapp from '@/public/todoapp.png';
 import doguitoform from '@/public/doguitoform.png';
 
 export const links = [
@@ -91,11 +96,11 @@ export const skillsData = [
     icon: React.createElement(SiNextdotjs),
     color: '#030712',
   },
-  {
-    name: 'Angular',
-    icon: React.createElement(FaAngular),
-    color: '#ef4444',
-  },
+  // {
+  //   name: 'Angular',
+  //   icon: React.createElement(FaAngular),
+  //   color: '#ef4444',
+  // },
   {
     name: 'Java',
     icon: React.createElement(FaJava),
@@ -120,6 +125,11 @@ export const skillsData = [
     name: 'SQL Server',
     icon: React.createElement(SiMicrosoftsqlserver),
     color: '#ef4444',
+  },
+  {
+    name: 'Firebase',
+    icon: React.createElement(SiFirebase),
+    color: '#fbbf24',
   },
   {
     name: 'Git',
@@ -180,9 +190,24 @@ export const toolsData = [
     color: '#9333ea',
   },
   {
+    name: 'React Router',
+    icon: React.createElement(SiReactrouter),
+    color: '#ef4444',
+  },
+  {
+    name: 'Redux',
+    icon: React.createElement(SiRedux),
+    color: '#a78bfa',
+  },
+  {
     name: 'Chakra UI',
     icon: React.createElement(SiChakraui),
     color: '#10b981',
+  },
+  {
+    name: 'Material UI',
+    icon: React.createElement(SiMui),
+    color: '#3b82f6',
   },
   {
     name: 'Figma',
@@ -194,11 +219,11 @@ export const toolsData = [
     icon: React.createElement(FaTrello),
     color: '#1d4ed8',
   },
-  {
-    name: 'Scrum',
-    icon: React.createElement(DiScrum),
-    color: '#16a34a',
-  },
+  // {
+  //   name: 'Scrum',
+  //   icon: React.createElement(DiScrum),
+  //   color: '#16a34a',
+  // },
 ] as const;
 
 export const experiencesData = [
@@ -224,10 +249,26 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: 'Journal App',
+    description:
+      'Aplicación web para escribir notas personales. La aplicación cuenta con un sistema de autenticación de usuario y protección de rutas. Además, cuenta con un sistema de creación, edición y eliminación de notas.',
+    tags: [
+      'React',
+      'React-router',
+      'Redux',
+      'JavaScript',
+      'Material UI',
+      'Firebase',
+    ],
+    imageUrl: journal,
+    demoUrl: 'https://journal-v1.vercel.app/',
+    githubUrl: 'https://github.com/StefanoP21/journal-app',
+  },
+  {
     title: 'Tarot Cards',
     description:
-      'Aplicación web para leer cartas de tarot con temática CyberPunk 2077. La aplicación cuenta con un sistema de lectura y búsqueda de cartas y un sistema de interpretación de resultados. Además, cuenta con un sistema de autenticación de usuario y protección de rutas.',
-    tags: ['React', 'JavaScript', 'Tailwind CSS'],
+      'Aplicación web para leer cartas de tarot con temática CyberPunk 2077. La aplicación cuenta con un sistema de lectura y búsqueda de cartas y un sistema de interpretación de resultados. Además, cuenta con un sistema de protección de rutas.',
+    tags: ['React', 'React-router', 'JavaScript', 'Tailwind CSS'],
     imageUrl: tarotspa,
     demoUrl: 'https://tarot-spa.vercel.app/',
     githubUrl: 'https://github.com/StefanoP21/tarot-spa',
@@ -236,7 +277,7 @@ export const projectsData = [
     title: 'Apuchay',
     description:
       'Aplicación web para mejorar el control de las obras públicas. La aplicación cuenta con una interfaz orientada al ciudadano común. Además, cuenta con un sistema de reportes de obras y cursos de capacitación online.',
-    tags: ['React', 'Chakra UI', 'JavaScript'],
+    tags: ['React', 'React-router', 'JavaScript', 'Chakra UI'],
     imageUrl: apuchay,
     demoUrl: 'https://stefanop21.github.io/hackaton-cgr2023/',
     githubUrl: 'https://github.com/StefanoP21/hackaton-cgr2023',
@@ -254,7 +295,7 @@ export const projectsData = [
     title: 'Giphy',
     description:
       'Aplicación web para ver GIFs. La aplicación cuenta con un buscador de GIFs y utiliza la API de GIPHY Developers para mostrar los resultados.',
-    tags: ['React', 'JavaScript', 'Vite'],
+    tags: ['React', 'JavaScript'],
     imageUrl: giphy,
     demoUrl: 'https://stefanop21.github.io/giphy-app/',
     githubUrl: 'https://github.com/StefanoP21/giphy-app',
@@ -286,24 +327,24 @@ export const projectsData = [
     demoUrl: 'https://stefanop21.github.io/saas-website/',
     githubUrl: 'https://github.com/StefanoP21/saas-website',
   },
-  {
-    title: 'Pokédex',
-    description:
-      'Aplicación web para ver información de los pokémon de la primera generación. La aplicación utiliza la API de PokéAPI para mostrar los resultados. Además, cuenta con un listado de filtros para mostrar pokémon por tipo.',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    imageUrl: pokedex,
-    demoUrl: 'https://stefanop21.github.io/pokedex/',
-    githubUrl: 'https://github.com/StefanoP21/pokedex',
-  },
-  {
-    title: 'TODO App',
-    description:
-      'Aplicación web para gestionar tareas. La aplicación permite crear y eliminar tareas. Además, cuenta con un sistema de etiquetas para clasificar las tareas cumplidas.',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    imageUrl: todoapp,
-    demoUrl: 'https://stefanop21.github.io/todo-app/',
-    githubUrl: 'https://github.com/StefanoP21/todo-app',
-  },
+  // {
+  //   title: 'Pokédex',
+  //   description:
+  //     'Aplicación web para ver información de los pokémon de la primera generación. La aplicación utiliza la API de PokéAPI para mostrar los resultados. Además, cuenta con un listado de filtros para mostrar pokémon por tipo.',
+  //   tags: ['HTML', 'CSS', 'JavaScript'],
+  //   imageUrl: pokedex,
+  //   demoUrl: 'https://stefanop21.github.io/pokedex/',
+  //   githubUrl: 'https://github.com/StefanoP21/pokedex',
+  // },
+  // {
+  //   title: 'TODO App',
+  //   description:
+  //     'Aplicación web para gestionar tareas. La aplicación permite crear y eliminar tareas. Además, cuenta con un sistema de etiquetas para clasificar las tareas cumplidas.',
+  //   tags: ['HTML', 'CSS', 'JavaScript'],
+  //   imageUrl: todoapp,
+  //   demoUrl: 'https://stefanop21.github.io/todo-app/',
+  //   githubUrl: 'https://github.com/StefanoP21/todo-app',
+  // },
   {
     title: 'PetShop',
     description:
