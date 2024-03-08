@@ -40,7 +40,12 @@ export const Skills = () => {
             }}
             custom={index}
           >
-            {icon}
+            <motion.span
+              className="transition-all duration-300 ease-in-out"
+              style={hoverIndex === index ? { color } : {}}
+            >
+              {icon}
+            </motion.span>
             <span>{name}</span>
           </motion.li>
         ))}
