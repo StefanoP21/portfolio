@@ -1,11 +1,12 @@
 import React from 'react';
 import {
   FaReact,
-  FaAngular,
   FaJava,
   FaBootstrap,
   FaCode,
   FaTrello,
+  FaSlack,
+  FaNodeJs,
 } from 'react-icons/fa';
 import {
   BiLogoJavascript,
@@ -16,7 +17,6 @@ import {
   SiNextdotjs,
   SiPhp,
   SiSpring,
-  SiMicrosoftsqlserver,
   SiTailwindcss,
   SiChakraui,
   SiMui,
@@ -30,9 +30,9 @@ import {
   SiFirebase,
   SiRedux,
   SiReactrouter,
+  SiNestjs,
 } from 'react-icons/si';
 import { GrMysql, GrOracle } from 'react-icons/gr';
-// import { DiScrum } from 'react-icons/di';
 import { FaGitAlt } from 'react-icons/fa6';
 import { GoCopilot } from 'react-icons/go';
 
@@ -44,8 +44,6 @@ import teambuilder from '@/public/teambuilder.png';
 import smartbank from '@/public/smartbank.png';
 import coffehunter from '@/public/coffehunter.png';
 import growth from '@/public/growth.png';
-// import pokedex from '@/public/pokedex.png';
-// import todoapp from '@/public/todoapp.png';
 import doguitoform from '@/public/doguitoform.png';
 
 export const links = [
@@ -92,14 +90,29 @@ export const skillsData = [
     color: '#0ea5e9',
   },
   {
+    name: 'React Router',
+    icon: React.createElement(SiReactrouter),
+    color: '#ef4444',
+  },
+  {
+    name: 'Redux',
+    icon: React.createElement(SiRedux),
+    color: '#a78bfa',
+  },
+  {
     name: 'Next.js',
     icon: React.createElement(SiNextdotjs),
     color: '#030712',
   },
+  {
+    name: 'Node.js',
+    icon: React.createElement(FaNodeJs),
+    color: '#059669',
+  },
   // {
-  //   name: 'Angular',
-  //   icon: React.createElement(FaAngular),
-  //   color: '#ef4444',
+  //   name: 'Nest.js',
+  //   icon: React.createElement(SiNestjs),
+  //   color: '#e11d48',
   // },
   {
     name: 'Java',
@@ -122,11 +135,6 @@ export const skillsData = [
     color: '#2563eb',
   },
   {
-    name: 'SQL Server',
-    icon: React.createElement(SiMicrosoftsqlserver),
-    color: '#ef4444',
-  },
-  {
     name: 'Firebase',
     icon: React.createElement(SiFirebase),
     color: '#fbbf24',
@@ -146,33 +154,23 @@ export const skillsData = [
     icon: React.createElement(SiTailwindcss),
     color: '#06b6d4',
   },
-  {
-    name: 'Jest',
-    icon: React.createElement(SiJest),
-    color: '#db2777',
-  },
-  {
-    name: 'Testing Library',
-    icon: React.createElement(SiTestinglibrary),
-    color: '#dc2626',
-  },
 ] as const;
 
 export const toolsData = [
   {
     name: 'VS Code',
     icon: React.createElement(SiVisualstudiocode),
-    color: '#2563eb',
-  },
-  {
-    name: 'Webstorm',
-    icon: React.createElement(SiWebstorm),
-    color: '#0ea5e9',
+    color: '#3b82f6',
   },
   {
     name: 'IntelliJ',
     icon: React.createElement(SiIntellijidea),
     color: '#dc2626',
+  },
+  {
+    name: 'Webstorm',
+    icon: React.createElement(SiWebstorm),
+    color: '#0ea5e9',
   },
   {
     name: 'Postman',
@@ -190,14 +188,19 @@ export const toolsData = [
     color: '#9333ea',
   },
   {
-    name: 'React Router',
-    icon: React.createElement(SiReactrouter),
-    color: '#ef4444',
+    name: 'Slack',
+    icon: React.createElement(FaSlack),
+    color: '#16a34a',
   },
   {
-    name: 'Redux',
-    icon: React.createElement(SiRedux),
-    color: '#a78bfa',
+    name: 'Figma',
+    icon: React.createElement(BiLogoFigma),
+    color: '#db2777',
+  },
+  {
+    name: 'Trello',
+    icon: React.createElement(FaTrello),
+    color: '#1d4ed8',
   },
   {
     name: 'Chakra UI',
@@ -210,20 +213,15 @@ export const toolsData = [
     color: '#3b82f6',
   },
   {
-    name: 'Figma',
-    icon: React.createElement(BiLogoFigma),
+    name: 'Jest',
+    icon: React.createElement(SiJest),
     color: '#db2777',
   },
   {
-    name: 'Trello',
-    icon: React.createElement(FaTrello),
-    color: '#1d4ed8',
+    name: 'Testing Library',
+    icon: React.createElement(SiTestinglibrary),
+    color: '#dc2626',
   },
-  // {
-  //   name: 'Scrum',
-  //   icon: React.createElement(DiScrum),
-  //   color: '#16a34a',
-  // },
 ] as const;
 
 export const experiencesData = [
