@@ -7,6 +7,7 @@ import {
   FaTrello,
   FaSlack,
   FaNodeJs,
+  FaDocker,
 } from 'react-icons/fa';
 import {
   BiLogoJavascript,
@@ -30,7 +31,9 @@ import {
   SiFirebase,
   SiRedux,
   SiReactrouter,
+  SiExpress,
   SiNestjs,
+  SiMongodb,
 } from 'react-icons/si';
 import { GrMysql, GrOracle } from 'react-icons/gr';
 import { FaGitAlt } from 'react-icons/fa6';
@@ -128,6 +131,11 @@ export const skillsData = [
     name: 'PHP',
     icon: React.createElement(SiPhp),
     color: '#8b5cf6',
+  },
+  {
+    name: 'MongoDB',
+    icon: React.createElement(SiMongodb),
+    color: '#059669',
   },
   {
     name: 'MySQL',
