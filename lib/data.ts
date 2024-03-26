@@ -39,6 +39,7 @@ import { GrMysql, GrOracle } from 'react-icons/gr';
 import { FaGitAlt } from 'react-icons/fa6';
 import { GoCopilot } from 'react-icons/go';
 
+import calendar from '@/public/calendar.png';
 import journal from '@/public/journal.png';
 import tarotspa from '@/public/tarotspa.png';
 import apuchay from '@/public/apuchay.png';
@@ -133,14 +134,14 @@ export const skillsData = [
     color: '#8b5cf6',
   },
   {
-    name: 'MongoDB',
-    icon: React.createElement(SiMongodb),
-    color: '#059669',
-  },
-  {
     name: 'MySQL',
     icon: React.createElement(GrMysql),
     color: '#2563eb',
+  },
+  {
+    name: 'MongoDB',
+    icon: React.createElement(SiMongodb),
+    color: '#059669',
   },
   {
     name: 'Firebase',
@@ -255,6 +256,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: 'Calendar App',
+    description:
+      'Aplicación web para gestionar eventos personales. La aplicación cuenta con un sistema de autenticación de usuario y protección de rutas. Además, cuenta con un sistema de creación, actualización y eliminación de eventos.',
+    tags: [
+      'React',
+      'React-router',
+      'Redux',
+      'JavaScript',
+      'Chakra UI',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'JWT',
+    ],
+    imageUrl: calendar,
+    demoUrl: 'https://calendar-app-v1.vercel.app/',
+    githubUrl: 'https://github.com/StefanoP21/calendar-app',
+  },
+  {
     title: 'Journal App',
     description:
       'Aplicación web para escribir notas personales. La aplicación cuenta con un sistema de autenticación de usuario y protección de rutas. Además, cuenta con un sistema de creación, edición y eliminación de notas.',
@@ -292,7 +312,7 @@ export const projectsData = [
     title: 'Organizador de Equipos',
     description:
       'Aplicación web para ayudar en la organización de equipos de trabajo. La aplicación permite crear plantillas de personal y asignarlos a un equipo. Etiqueta miembros favoritos y eliminalos.',
-    tags: ['React', 'JavaScript'],
+    tags: ['React', 'JavaScript', 'Styled-components'],
     imageUrl: teambuilder,
     demoUrl: 'https://registro-personal-org.vercel.app/',
     githubUrl: 'https://github.com/StefanoP21/registro-personal-org',
@@ -301,7 +321,7 @@ export const projectsData = [
     title: 'Giphy',
     description:
       'Aplicación web para ver GIFs. La aplicación cuenta con un buscador de GIFs y utiliza la API de GIPHY Developers para mostrar los resultados.',
-    tags: ['React', 'JavaScript'],
+    tags: ['React', 'JavaScript', 'Styled-components'],
     imageUrl: giphy,
     demoUrl: 'https://stefanop21.github.io/giphy-app/',
     githubUrl: 'https://github.com/StefanoP21/giphy-app',
@@ -310,7 +330,7 @@ export const projectsData = [
     title: 'Smart Bank',
     description:
       'Aplicación web para la gestión de finanzas personales. La aplicación simula un estado de cuenta bancario y cuenta con funcionalidades para ocultar y mostrar el saldo, así como cambiar el tema.',
-    tags: ['React', 'JavaScript'],
+    tags: ['React', 'JavaScript', 'Styled-components'],
     imageUrl: smartbank,
     demoUrl: 'https://smart-bank-liard.vercel.app/',
     githubUrl: 'https://github.com/StefanoP21/smart-bank',
