@@ -1,35 +1,51 @@
-## Portfolio
+# Portfolio
 
 ![Imagen de previsualización](public/portfolio.png)
 
-## Getting Started
+### Instalación
 
-First, run the development server:
+Clona el repositorio y navega hasta el directorio:
+
+```bash
+git clone https://github.com/StefanoP21/portfolio.git
+```
+
+### Instala las dependencias:
+
+```bash
+npm install
+#or
+yarn add
+```
+
+### Variables de Entorno
+
+Cree un archivo .env en la carpeta raíz de su proyecto y añada sus variables. Consulte .env.template para obtener ayuda.
+
+### Ejecución en modo de desarrollo
+
+Para iniciar la aplicación en modo de desarrollo, ejecuta:
 
 ```bash
 npm run dev
-# or
+#or
 yarn dev
-# or
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Tecnologías
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://es.react.dev/)
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.npmjs.com/package/framer-motion)
+- [React Email](https://react.email/)
+- [Resend](https://resend.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Autor
 
-## Learn More
+- [Stefano Palomino](https://github.com/StefanoP21)
 
-To learn more about Next.js, take a look at the following resources:
+### Licencia
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este proyecto está disponible para su uso bajo la Licencia MIT.
