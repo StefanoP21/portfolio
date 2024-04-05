@@ -246,15 +246,13 @@ export const projectsData = [
     description:
       'Aplicación web para gestionar eventos personales. La aplicación cuenta con un sistema de autenticación de usuario y protección de rutas. Además, cuenta con un sistema de creación, actualización y eliminación de eventos.',
     tags: [
+      'JavaScript',
       'React',
       'React-router',
       'Redux Toolkit',
-      'JavaScript',
-      'Chakra UI',
       'Node.js',
       'Express',
       'MongoDB',
-      'JWT',
     ],
     imageUrl: calendar,
     demoUrl: 'https://calendar-app-v1.vercel.app/',
@@ -265,10 +263,10 @@ export const projectsData = [
     description:
       'Aplicación web para escribir notas personales. La aplicación cuenta con un sistema de autenticación de usuario y protección de rutas. Además, cuenta con un sistema de creación, edición y eliminación de notas.',
     tags: [
+      'JavaScript',
       'React',
       'React-router',
       'Redux Toolkit',
-      'JavaScript',
       'Material UI',
       'Firebase',
     ],
@@ -280,7 +278,7 @@ export const projectsData = [
     title: 'Tarot Cards',
     description:
       'Aplicación web para leer cartas de tarot con temática CyberPunk 2077. La aplicación cuenta con un sistema de lectura y búsqueda de cartas y un sistema de interpretación de resultados. Además, cuenta con un sistema de protección de rutas.',
-    tags: ['React', 'React-router', 'JavaScript', 'Tailwind CSS'],
+    tags: ['JavaScript', 'React', 'React-router', 'Tailwind CSS'],
     imageUrl: tarotspa,
     demoUrl: 'https://tarot-spa.vercel.app/',
     githubUrl: 'https://github.com/StefanoP21/tarot-spa',
@@ -289,7 +287,7 @@ export const projectsData = [
     title: 'Apuchay',
     description:
       'Aplicación web para mejorar el control de las obras públicas. La aplicación cuenta con una interfaz orientada al ciudadano común. Además, cuenta con un sistema de reportes de obras y cursos de capacitación online.',
-    tags: ['React', 'React-router', 'JavaScript', 'Chakra UI'],
+    tags: ['JavaScript', 'React', 'React-router', 'Chakra UI'],
     imageUrl: apuchay,
     demoUrl: 'https://stefanop21.github.io/hackaton-cgr2023/',
     githubUrl: 'https://github.com/StefanoP21/hackaton-cgr2023',
@@ -298,7 +296,7 @@ export const projectsData = [
     title: 'Organizador de Equipos',
     description:
       'Aplicación web para ayudar en la organización de equipos de trabajo. La aplicación permite crear plantillas de personal y asignarlos a un equipo. Etiqueta miembros favoritos y eliminalos.',
-    tags: ['React', 'JavaScript', 'Styled-components'],
+    tags: ['JavaScript', 'React', 'Styled-components'],
     imageUrl: teambuilder,
     demoUrl: 'https://registro-personal-org.vercel.app/',
     githubUrl: 'https://github.com/StefanoP21/registro-personal-org',
@@ -307,7 +305,7 @@ export const projectsData = [
     title: 'Giphy',
     description:
       'Aplicación web para ver GIFs. La aplicación cuenta con un buscador de GIFs y utiliza la API de GIPHY Developers para mostrar los resultados.',
-    tags: ['React', 'JavaScript', 'Styled-components'],
+    tags: ['JavaScript', 'React', 'Styled-components'],
     imageUrl: giphy,
     demoUrl: 'https://stefanop21.github.io/giphy-app/',
     githubUrl: 'https://github.com/StefanoP21/giphy-app',
@@ -316,7 +314,7 @@ export const projectsData = [
     title: 'Smart Bank',
     description:
       'Aplicación web para la gestión de finanzas personales. La aplicación simula un estado de cuenta bancario y cuenta con funcionalidades para ocultar y mostrar el saldo, así como cambiar el tema.',
-    tags: ['React', 'JavaScript', 'Styled-components'],
+    tags: ['JavaScript', 'React', 'Styled-components'],
     imageUrl: smartbank,
     demoUrl: 'https://smart-bank-liard.vercel.app/',
     githubUrl: 'https://github.com/StefanoP21/smart-bank',
