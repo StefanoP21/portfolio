@@ -168,11 +168,6 @@ export const toolsData = [
     color: '#3b82f6',
   },
   {
-    name: 'IntelliJ',
-    icon: React.createElement(SiIntellijidea),
-    color: '#dc2626',
-  },
-  {
     name: 'Webstorm',
     icon: React.createElement(SiWebstorm),
     color: '#0ea5e9',
