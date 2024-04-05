@@ -38,6 +38,7 @@ import {
 import { GrMysql, GrOracle } from 'react-icons/gr';
 import { FaGitAlt } from 'react-icons/fa6';
 import { GoCopilot } from 'react-icons/go';
+import { BsFiletypeSql } from 'react-icons/bs';
 
 import calendar from '@/public/calendar.png';
 import journal from '@/public/journal.png';
@@ -94,12 +95,7 @@ export const skillsData = [
     color: '#0ea5e9',
   },
   {
-    name: 'React Router',
-    icon: React.createElement(SiReactrouter),
-    color: '#ef4444',
-  },
-  {
-    name: 'Redux',
+    name: 'Redux Toolkit',
     icon: React.createElement(SiRedux),
     color: '#a78bfa',
   },
@@ -113,29 +109,19 @@ export const skillsData = [
     icon: React.createElement(FaNodeJs),
     color: '#059669',
   },
+  {
+    name: 'Express',
+    icon: React.createElement(SiExpress),
+    color: '#93c5fd',
+  },
   // {
   //   name: 'Nest.js',
   //   icon: React.createElement(SiNestjs),
   //   color: '#e11d48',
   // },
   {
-    name: 'Java',
-    icon: React.createElement(FaJava),
-    color: '#f43f5e',
-  },
-  {
-    name: 'Spring',
-    icon: React.createElement(SiSpring),
-    color: '#10b981',
-  },
-  {
-    name: 'PHP',
-    icon: React.createElement(SiPhp),
-    color: '#8b5cf6',
-  },
-  {
-    name: 'MySQL',
-    icon: React.createElement(GrMysql),
+    name: 'SQL',
+    icon: React.createElement(BsFiletypeSql),
     color: '#2563eb',
   },
   {
@@ -163,6 +149,16 @@ export const skillsData = [
     icon: React.createElement(SiTailwindcss),
     color: '#06b6d4',
   },
+  {
+    name: 'Jest',
+    icon: React.createElement(SiJest),
+    color: '#db2777',
+  },
+  {
+    name: 'Testing Library',
+    icon: React.createElement(SiTestinglibrary),
+    color: '#dc2626',
+  },
 ] as const;
 
 export const toolsData = [
@@ -189,7 +185,7 @@ export const toolsData = [
   {
     name: 'Bash',
     icon: React.createElement(SiGnubash),
-    color: '#030712',
+    color: '#f43f5e',
   },
   {
     name: 'Github Copilot',
@@ -202,14 +198,14 @@ export const toolsData = [
     color: '#16a34a',
   },
   {
-    name: 'Figma',
-    icon: React.createElement(BiLogoFigma),
-    color: '#db2777',
-  },
-  {
     name: 'Trello',
     icon: React.createElement(FaTrello),
     color: '#1d4ed8',
+  },
+  {
+    name: 'Figma',
+    icon: React.createElement(BiLogoFigma),
+    color: '#db2777',
   },
   {
     name: 'Chakra UI',
@@ -220,16 +216,6 @@ export const toolsData = [
     name: 'Material UI',
     icon: React.createElement(SiMui),
     color: '#3b82f6',
-  },
-  {
-    name: 'Jest',
-    icon: React.createElement(SiJest),
-    color: '#db2777',
-  },
-  {
-    name: 'Testing Library',
-    icon: React.createElement(SiTestinglibrary),
-    color: '#dc2626',
   },
 ] as const;
 
@@ -262,7 +248,7 @@ export const projectsData = [
     tags: [
       'React',
       'React-router',
-      'Redux',
+      'Redux Toolkit',
       'JavaScript',
       'Chakra UI',
       'Node.js',
@@ -281,7 +267,7 @@ export const projectsData = [
     tags: [
       'React',
       'React-router',
-      'Redux',
+      'Redux Toolkit',
       'JavaScript',
       'Material UI',
       'Firebase',
