@@ -225,15 +225,7 @@ export const projectsData = [
     title: 'Calendar App',
     description:
       'Aplicación web para gestionar eventos personales. La aplicación cuenta con un sistema de autenticación de usuario y protección de rutas. Además, cuenta con un sistema de creación, actualización y eliminación de eventos.',
-    tags: [
-      'JavaScript',
-      'React',
-      'React-router',
-      'Redux Toolkit',
-      'Node.js',
-      'Express',
-      'MongoDB',
-    ],
+    tags: ['React', 'React-router', 'Redux', 'Node.js', 'Express', 'MongoDB'],
     imageUrl: calendar,
     demoUrl: 'https://calendar-app-v1.vercel.app/',
     githubUrl: 'https://github.com/StefanoP21/calendar-app',
@@ -242,14 +234,7 @@ export const projectsData = [
     title: 'Journal App',
     description:
       'Aplicación web para escribir notas personales. La aplicación cuenta con un sistema de autenticación de usuario y protección de rutas. Además, cuenta con un sistema de creación, edición y eliminación de notas.',
-    tags: [
-      'JavaScript',
-      'React',
-      'React-router',
-      'Redux Toolkit',
-      'Material UI',
-      'Firebase',
-    ],
+    tags: ['React', 'React-router', 'Redux', 'Material UI', 'Firebase'],
     imageUrl: journal,
     demoUrl: 'https://journal-v1.vercel.app/',
     githubUrl: 'https://github.com/StefanoP21/journal-app',
