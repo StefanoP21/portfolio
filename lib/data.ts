@@ -114,11 +114,6 @@ export const skillsData = [
     icon: React.createElement(SiExpress),
     color: '#93c5fd',
   },
-  // {
-  //   name: 'Nest.js',
-  //   icon: React.createElement(SiNestjs),
-  //   color: '#e11d48',
-  // },
   {
     name: 'SQL',
     icon: React.createElement(BsFiletypeSql),
@@ -133,11 +128,6 @@ export const skillsData = [
     name: 'Firebase',
     icon: React.createElement(SiFirebase),
     color: '#fbbf24',
-  },
-  {
-    name: 'Git',
-    icon: React.createElement(FaGitAlt),
-    color: '#ea580c',
   },
   {
     name: 'Bootstrap',
@@ -183,6 +173,11 @@ export const toolsData = [
     color: '#f43f5e',
   },
   {
+    name: 'Git',
+    icon: React.createElement(FaGitAlt),
+    color: '#ea580c',
+  },
+  {
     name: 'Github Copilot',
     icon: React.createElement(GoCopilot),
     color: '#9333ea',
@@ -201,16 +196,6 @@ export const toolsData = [
     name: 'Figma',
     icon: React.createElement(BiLogoFigma),
     color: '#db2777',
-  },
-  {
-    name: 'Chakra UI',
-    icon: React.createElement(SiChakraui),
-    color: '#10b981',
-  },
-  {
-    name: 'Material UI',
-    icon: React.createElement(SiMui),
-    color: '#3b82f6',
   },
 ] as const;
 
