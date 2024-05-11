@@ -215,12 +215,12 @@ export const projectsData = [
   {
     title: 'Apuchay',
     description:
-      'Aplicación web para mejorar el control de las obras públicas. La aplicación cuenta con un sistema de autenticación de usuarios, protección de rutas y cursos de capacitación online.',
+      'Aplicación web para mejorar el control de las obras públicas. La aplicación cuenta con un sistema de autenticación de usuarios, protección de rutas y cursos de capacitación.',
     tags: [
       'TypeScript',
       'React',
       'React Router',
-      'TanStack Query',
+      'React Query',
       'Chakra UI',
       'Node.js',
       'Express',
