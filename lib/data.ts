@@ -34,10 +34,10 @@ import { FaGitAlt } from 'react-icons/fa6';
 import { GoCopilot } from 'react-icons/go';
 import { BsFiletypeSql } from 'react-icons/bs';
 
+import apuchay from '@/public/apuchay.png';
 import calendar from '@/public/calendar.png';
 import journal from '@/public/journal.png';
 import tarotspa from '@/public/tarotspa.png';
-import apuchay from '@/public/apuchay.png';
 import coffehunter from '@/public/coffehunter.png';
 import growth from '@/public/growth.png';
 import doguitoform from '@/public/doguitoform.png';
@@ -215,7 +215,7 @@ export const projectsData = [
   {
     title: 'Apuchay',
     description:
-      'Aplicación web para mejorar el control de las obras públicas. La aplicación cuenta con un sistema de autenticación de usuarios, protección de rutas y cursos de capacitación.',
+      'Aplicación web para mejorar el control de las obras públicas. La aplicación cuenta con un backend para la gestión de usuarios, protección de rutas y manejo de cursos.',
     tags: [
       'TypeScript',
       'React',
@@ -234,7 +234,7 @@ export const projectsData = [
   {
     title: 'Calendar App',
     description:
-      'Aplicación web para gestionar eventos. La aplicación cuenta con un sistema de autenticación de usuarios, protección de rutas y operaciones CRUD para los eventos.',
+      'Aplicación web para gestionar eventos. La aplicación cuenta con un backend para la autenticación de usuarios, protección de rutas y manejo de eventos.',
     tags: [
       'JavaScript',
       'React',
