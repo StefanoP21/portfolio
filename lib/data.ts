@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   FaReact,
-  FaBootstrap,
   FaCode,
   FaTrello,
   FaSlack,
@@ -12,6 +11,7 @@ import {
   BiLogoJavascript,
   BiLogoTypescript,
   BiLogoFigma,
+  BiLogoPostgresql,
 } from 'react-icons/bi';
 import {
   SiNextdotjs,
@@ -111,19 +111,19 @@ export const skillsData = [
     color: '#93c5fd',
   },
   {
-    name: 'SQL',
-    icon: React.createElement(BsFiletypeSql),
-    color: '#2563eb',
+    name: 'NestJS',
+    icon: React.createElement(SiNestjs),
+    color: '#e535ab',
+  },
+  {
+    name: 'PostgreSQL',
+    icon: React.createElement(BiLogoPostgresql),
+    color: '#316192',
   },
   {
     name: 'MongoDB',
     icon: React.createElement(SiMongodb),
     color: '#059669',
-  },
-  {
-    name: 'Firebase',
-    icon: React.createElement(SiFirebase),
-    color: '#fbbf24',
   },
   {
     name: 'Tailwind CSS',
@@ -157,6 +157,16 @@ export const toolsData = [
     name: 'Postman',
     icon: React.createElement(SiPostman),
     color: '#fb923c',
+  },
+  {
+    name: 'Docker',
+    icon: React.createElement(FaDocker),
+    color: '#0696d7',
+  },
+  {
+    name: 'Firebase',
+    icon: React.createElement(SiFirebase),
+    color: '#fbbf24',
   },
   {
     name: 'Bash',
