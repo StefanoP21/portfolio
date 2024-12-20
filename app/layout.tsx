@@ -1,17 +1,17 @@
-import './globals.css';
-import { Inter } from 'next/font/google';
-import { Footer, Gradient, Header } from '@/components';
-import { ActiveSectionContextProvider } from '@/context/ActiveSectionContextProvider';
-import { Toaster } from 'react-hot-toast';
-import { ThemeSwitch } from '@/theme/ThemeSwitch';
-import { ThemeContextProvider } from '@/context/ThemeContextProvider';
-import { useTheme } from '@/hooks/useTheme';
+import "./globals.css";
+import { Inter } from "next/font/google";
+import { Footer, Gradient, Header } from "@/components";
+import { ActiveSectionContextProvider } from "@/context/ActiveSectionContextProvider";
+import { Toaster } from "react-hot-toast";
+import { ThemeSwitch } from "@/theme/ThemeSwitch";
+import { ThemeContextProvider } from "@/context/ThemeContextProvider";
+import { useTheme } from "@/hooks/useTheme";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Stefano | Software Developer',
-  description: 'Desarrollador de software, apasionado por la tecnología.',
+  title: "Stefano | Software Developer",
+  description: "Desarrollador de software, apasionado por la tecnología.",
 };
 
 export default function RootLayout({

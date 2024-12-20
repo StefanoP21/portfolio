@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { useRef } from 'react';
-import { projectsData } from '@/lib/data';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import Image from 'next/image';
-import { CgWebsite } from 'react-icons/cg';
-import { FaGithub } from 'react-icons/fa';
+import { useRef } from "react";
+import { projectsData } from "@/lib/data";
+import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
+import { CgWebsite } from "react-icons/cg";
+import { FaGithub } from "react-icons/fa";
 
 type Projectsprops = (typeof projectsData)[number];
 
@@ -21,7 +21,7 @@ export const ProjectCard = ({
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['0 1', '1.33 1'],
+    offset: ["0 1", "1.33 1"],
   });
 
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);

@@ -8,7 +8,7 @@ export const Footer = () => {
         <span className="font-semibold">Sobre este sitio:</span> Creado con
         React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
         Framer Motion y React Email & Resend. El código fuente está disponible
-        en{' '}
+        en{" "}
         <a
           className="underline font-semibold hover:text-gray-950 duration-300 dark:hover:text-gray-200 transition"
           href="https://github.com/StefanoP21/portfolio"

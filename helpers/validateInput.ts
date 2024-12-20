@@ -13,7 +13,7 @@ export const validateInput = (
 ) => {
   if (
     !value ||
-    typeof value !== 'string' ||
+    typeof value !== "string" ||
     value.length > maxLength ||
     value.length < minLength
   ) {

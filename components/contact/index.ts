@@ -1,2 +1,2 @@
-export * from './Contact';
-export * from './SubmitButton';
+export * from "./Contact";
+export * from "./SubmitButton";

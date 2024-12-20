@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { createContext, useState } from 'react';
-import type { SectionHash } from '@/lib/types';
+import { createContext, useState } from "react";
+import type { SectionHash } from "@/lib/types";
 
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
@@ -21,7 +21,7 @@ export const ActiveSectionContext = createContext<ActiveSectionContextType>(
 export const ActiveSectionContextProvider = ({
   children,
 }: ActiveSectionContextProviderProps) => {
-  const [activeSection, setActiveSection] = useState<SectionHash>('#home');
+  const [activeSection, setActiveSection] = useState<SectionHash>("#home");
   const [timeOfLastClick, setTimeOfLastClick] = useState<number>(0);
 
   return (

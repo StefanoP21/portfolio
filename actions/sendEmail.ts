@@ -1,40 +1,40 @@
-'use server';
+"use server";
 
-import React from 'react';
-import { Resend } from 'resend';
-import { validateInput, getErrorMessage, validateEmail } from '@/helpers';
-import { ContactFormEmail } from '@/email/ContactFormEmail';
+import React from "react";
+import { Resend } from "resend";
+import { validateInput, getErrorMessage, validateEmail } from "@/helpers";
+import { ContactFormEmail } from "@/email/ContactFormEmail";
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
-  const senderEmail = formData.get('senderEmail');
-  const message = formData.get('message');
+  const senderEmail = formData.get("senderEmail");
+  const message = formData.get("message");
 
   if (!validateEmail(senderEmail)) {
     return {
-      error: 'Formato de correo inválido',
+      error: "Formato de correo inválido",
     };
   }
 
   if (!validateInput(senderEmail, 500)) {
     return {
-      error: 'Correo inválido',
+      error: "Correo inválido",
     };
   }
 
   if (!validateInput(message, 5000)) {
     return {
-      error: 'Mensaje inválido',
+      error: "Mensaje inválido",
     };
   }
 
   let data;
   try {
     data = await resend.emails.send({
-      from: 'Portfolio <onboarding@resend.dev>',
-      to: 'aldair142015@gmail.com',
-      subject: 'Contact from portfolio form',
+      from: "Portfolio <onboarding@resend.dev>",
+      to: "aldair142015@gmail.com",
+      subject: "Contact from portfolio form",
       reply_to: senderEmail as string,
       react: React.createElement(ContactFormEmail, {
         message: message as string,

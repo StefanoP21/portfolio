@@ -1,2 +1,2 @@
-export * from './SectionDivider';
-export * from './SectionHeading';
+export * from "./SectionDivider";
+export * from "./SectionHeading";

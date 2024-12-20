@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { useSectionInView } from '@/hooks/useSectionInView';
-import { SectionHeading } from './shared';
-import { skillsData } from '@/lib/data';
-import { motion } from 'framer-motion';
-import { fadeInAnimationVariants } from '@/helpers';
+import { useState } from "react";
+import { useSectionInView } from "@/hooks/useSectionInView";
+import { SectionHeading } from "./shared";
+import { skillsData } from "@/lib/data";
+import { motion } from "framer-motion";
+import { fadeInAnimationVariants } from "@/helpers";
 
 export const Skills = () => {
-  const { ref } = useSectionInView('#skills');
+  const { ref } = useSectionInView("#skills");
   const [hoverIndex, setHoverIndex] = useState<null | number>(null);
 
   return (
@@ -26,7 +26,7 @@ export const Skills = () => {
           <motion.li
             key={index}
             className={`item flex items-center gap-1 border border-black/[0.1] rounded-xl px-5 py-3 shadow-md transition-all duration-300 ease-in-out cursor-default dark:border-white/[0.2] ${
-              hoverIndex === index ? 'border-custom-color' : ''
+              hoverIndex === index ? "border-custom-color" : ""
             }`}
             onMouseEnter={() => setHoverIndex(index)}
             onMouseLeave={() => setHoverIndex(null)}

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useFormStatus } from 'react-dom';
-import { IoSend } from 'react-icons/io5';
+import { useFormStatus } from "react-dom";
+import { IoSend } from "react-icons/io5";
 
 export const SubmitButton = () => {
   const { pending } = useFormStatus();
@@ -14,12 +14,12 @@ export const SubmitButton = () => {
     >
       {pending ? (
         <>
-          Enviando{' '}
+          Enviando{" "}
           <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white" />
         </>
       ) : (
         <>
-          Enviar{' '}
+          Enviar{" "}
           <IoSend className="opacity-70 group-hover:translate-x-1 transition" />
         </>
       )}

@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import portrait from '@/public/photo-sq.png';
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { PiPaperPlaneRightBold, PiDownloadBold } from 'react-icons/pi';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { useSectionInView } from '@/hooks/useSectionInView';
-import { useActiveSectionContext } from '@/hooks/useActiveSectionContext';
+import Image from "next/image";
+import portrait from "@/public/photo-sq.png";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { PiPaperPlaneRightBold, PiDownloadBold } from "react-icons/pi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useSectionInView } from "@/hooks/useSectionInView";
+import { useActiveSectionContext } from "@/hooks/useActiveSectionContext";
 
 export const Intro = () => {
-  const { ref } = useSectionInView('#home');
+  const { ref } = useSectionInView("#home");
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
@@ -24,7 +24,7 @@ export const Intro = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ type: 'tween', duration: 0.3 }}
+            transition={{ type: "tween", duration: 0.3 }}
           >
             <Image
               src={portrait}
@@ -42,7 +42,7 @@ export const Intro = () => {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: 'spring',
+              type: "spring",
               stiffness: 125,
               delay: 0.3,
               duration: 0.3,
@@ -58,11 +58,11 @@ export const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hola 👋,</span> soy{' '}
-        <span className="font-bold">Stefano.</span> Soy un{' '}
-        <span className="font-bold">desarrollador de software</span>{' '}
+        <span className="font-bold">Hola 👋,</span> soy{" "}
+        <span className="font-bold">Stefano.</span> Soy un{" "}
+        <span className="font-bold">desarrollador de software</span>{" "}
         especializado en el <span className="font-bold">Front-end</span>. Me
-        apasiona contruir{' '}
+        apasiona construir{" "}
         <span className="italic">sitios & aplicaciones web</span>. Mi
         especialidad es <span className="underline">React</span>.
       </motion.p>
@@ -87,7 +87,7 @@ export const Intro = () => {
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-100 transition"
           onClick={() => {
-            setActiveSection('#contact');
+            setActiveSection("#contact");
             setTimeOfLastClick(Date.now());
           }}
         >
@@ -100,7 +100,7 @@ export const Intro = () => {
           target="_blank"
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition borderBlack dark:bg-white/15"
         >
-          Descargar CV{' '}
+          Descargar CV{" "}
           <PiDownloadBold className="text-[1.2rem] opacity-70 group-hover:translate-y-1 transition" />
         </a>
 

@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { sendEmail } from '@/actions/sendEmail';
-import { SectionHeading } from '../shared';
-import { useSectionInView } from '@/hooks/useSectionInView';
-import { motion } from 'framer-motion';
-import { SubmitButton } from './SubmitButton';
-import toast from 'react-hot-toast';
+import { useState } from "react";
+import { sendEmail } from "@/actions/sendEmail";
+import { SectionHeading } from "../shared";
+import { useSectionInView } from "@/hooks/useSectionInView";
+import { motion } from "framer-motion";
+import { SubmitButton } from "./SubmitButton";
+import toast from "react-hot-toast";
 
 export const Contact = () => {
-  const { ref } = useSectionInView('#contact');
-  const [senderEmail, setSenderEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const { ref } = useSectionInView("#contact");
+  const [senderEmail, setSenderEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   return (
     <motion.section
@@ -26,7 +26,7 @@ export const Contact = () => {
       <SectionHeading heading="Contacto" />
       <p className="text-gray-700 -mt-4 dark:text-white/90">
         Póngase en contacto conmigo a través del siguiente formulario o
-        directamente a{' '}
+        directamente a{" "}
         <a
           className="underline font-semibold hover:text-gray-950 duration-300 transition dark:hover:text-white"
           href="mailto:stefanop21@outlook.es"
@@ -46,11 +46,11 @@ export const Contact = () => {
           }
 
           if (data) {
-            setSenderEmail('');
-            setMessage('');
+            setSenderEmail("");
+            setMessage("");
           }
 
-          toast.success('¡Mensaje enviado! Le responderé lo antes posible');
+          toast.success("¡Mensaje enviado! Le responderé lo antes posible");
         }}
       >
         <input

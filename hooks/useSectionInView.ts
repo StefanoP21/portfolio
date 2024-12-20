@@ -1,8 +1,8 @@
-import { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
-import { useActiveSectionContext } from './useActiveSectionContext';
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "./useActiveSectionContext";
 
-import type { SectionHash } from '@/lib/types';
+import type { SectionHash } from "@/lib/types";
 
 export const useSectionInView = (sectionHash: SectionHash, threshold = 0.8) => {
   const { ref, inView } = useInView({
