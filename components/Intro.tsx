@@ -96,7 +96,7 @@ export const Intro = () => {
         </Link>
 
         <a
-          href="/Stefano-ES.pdf"
+          href="/STEFANO_CV.pdf"
           target="_blank"
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition borderBlack dark:bg-white/15"
         >
