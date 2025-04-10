@@ -63,8 +63,7 @@ export const Intro = () => {
         <span className="font-bold">desarrollador de software</span>{" "}
         especializado en el <span className="font-bold">Front-end</span>. Me
         apasiona construir{" "}
-        <span className="italic">sitios & aplicaciones web</span>. Mi
-        especialidad es <span className="underline">React</span>.
+        <span className="italic">sitios y aplicaciones web</span>.
       </motion.p>
 
       <motion.p
